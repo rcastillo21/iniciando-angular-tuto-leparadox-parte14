@@ -1,6 +1,6 @@
 <!--{{ datos | json}}-->
 <div>
-<mat-paginator [length]="datos.length" [pageSize]="page_size" [pageSizeOptions]="[5, 10, 25, 100]" (page)=handlePage($event) showFirstLastButtons>
+<mat-paginator [length]="datos.length" [pageSize]="page_size" [pageSizeOptions]="page_SizeOptions" >
 </mat-paginator>
 <ul>
   <li *ngFor="let user of datos | paginate:page_size:page_number">
